@@ -3,12 +3,12 @@ import sys
 import re
 import os
 import json
+from imp import reload
 reload(sys)
-sys.setdefaultencoding('utf8')
 sys.path.append('./')
 
-from regs import *
-from models import *
+from .regs import *
+from .models import *
 
 regObj = {
 

@@ -1,1 +1,1 @@
-from uaDevice import parseUA
+from .uaDevice import parseUA

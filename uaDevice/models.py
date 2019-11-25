@@ -3,8 +3,8 @@ import sys
 import re
 import os
 import json
+from imp import reload
 reload(sys)
-sys.setdefaultencoding('utf8')
 sys.path.append('./')
 
 STRINGS_SAMSUNG = 'Samsung'
