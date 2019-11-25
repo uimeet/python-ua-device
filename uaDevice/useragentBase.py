@@ -1448,7 +1448,7 @@ class UA(object):
 
         # TechniSat
         #
-        match = optimizedSearch(r'\TechniSat ([^;]+);', ua)
+        match = optimizedSearch(r'TechniSat ([^;]+);', ua)
         if match:
             self.os['name'] = ''
             self.device['manufacturer'] = 'TechniSat'
@@ -1460,7 +1460,7 @@ class UA(object):
 
         # Technicolor
         #
-        match = optimizedSearch(r'\Technicolor_([^;]+);', ua)
+        match = optimizedSearch(r'Technicolor_([^;]+);', ua)
         if match:
             self.os['name'] = ''
             self.device['manufacturer'] = 'Technicolor'
