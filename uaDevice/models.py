@@ -3,8 +3,14 @@ import sys
 import re
 import os
 import json
-from imp import reload
+try:
+    from imp import reload
+except:
+    pass
 reload(sys)
+if sys.version_info.major < 3:
+    sys.setdefaultencoding('utf8')
+
 sys.path.append('./')
 
 STRINGS_SAMSUNG = 'Samsung'
