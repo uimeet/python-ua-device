@@ -504,9 +504,9 @@ class UA(object):
             if self.os['version']:
                 ver = self.os['version'].original or '0'
                 ver = float('.'.join(ver.split('.')[:2])) # 取两位
-                if self.os['version'].original >= 3:
+                if ver >= 3:
                     self.device['type'] = 'tablet'
-                if self.os['version'].original >= 4 and 'Mobile' in ua:
+                if ver >= 4 and 'Mobile' in ua:
                     self.device['type'] = 'mobile'
 
                 # 比原js多的逻辑
